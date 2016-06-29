@@ -8,12 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		BF208DBD1D1C17AC00BD1FF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF208DBC1D1C17AC00BD1FF0 /* AppDelegate.swift */; };
-		BF208DBF1D1C17AC00BD1FF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF208DBE1D1C17AC00BD1FF0 /* ViewController.swift */; };
+		BF208DBF1D1C17AC00BD1FF0 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF208DBE1D1C17AC00BD1FF0 /* WelcomeViewController.swift */; };
 		BF208DC21D1C17AC00BD1FF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF208DC01D1C17AC00BD1FF0 /* Main.storyboard */; };
 		BF208DC41D1C17AC00BD1FF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF208DC31D1C17AC00BD1FF0 /* Assets.xcassets */; };
 		BF208DC71D1C17AC00BD1FF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF208DC51D1C17AC00BD1FF0 /* LaunchScreen.storyboard */; };
 		BF208DD21D1C17AD00BD1FF0 /* UITestsSampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF208DD11D1C17AD00BD1FF0 /* UITestsSampleAppTests.swift */; };
-		BF208DDD1D1C17AD00BD1FF0 /* UITestsSampleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF208DDC1D1C17AD00BD1FF0 /* UITestsSampleAppUITests.swift */; };
+		BF208DDD1D1C17AD00BD1FF0 /* WelcomeViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF208DDC1D1C17AD00BD1FF0 /* WelcomeViewControllerUITests.swift */; };
+		BF208DEB1D1C183E00BD1FF0 /* SelectFeatureTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF208DEA1D1C183E00BD1FF0 /* SelectFeatureTableViewController.swift */; };
+		BF208DED1D1C1BC400BD1FF0 /* GradationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF208DEC1D1C1BC400BD1FF0 /* GradationView.swift */; };
+		BF3722F21D1FA243008E8EAD /* PostalCodeSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF3722F11D1FA243008E8EAD /* PostalCodeSearch.storyboard */; };
+		BF3FB8B11D216290000CDCCC /* LoginViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3FB8B01D216290000CDCCC /* LoginViewControllerUITests.swift */; };
+		BF3FB8B31D2180E9000CDCCC /* CalculatorViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3FB8B21D2180E9000CDCCC /* CalculatorViewControllerUITests.swift */; };
+		BF3FB8B51D218115000CDCCC /* PostalCodeSearchViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3FB8B41D218115000CDCCC /* PostalCodeSearchViewControllerUITests.swift */; };
+		BF4417781D1F52DB006736B8 /* SelectFeatureTableViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4417771D1F52DB006736B8 /* SelectFeatureTableViewControllerUITests.swift */; };
+		BF85373E1D1C31180081B3E5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF85373D1D1C31180081B3E5 /* LoginViewController.swift */; };
+		BF8537401D1C357B0081B3E5 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = BF85373F1D1C357B0081B3E5 /* index.html */; };
+		BF8537431D1E77A00081B3E5 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8537421D1E77A00081B3E5 /* ViewControllerFactory.swift */; };
+		BF8537451D1E7CC80081B3E5 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8537441D1E7CC80081B3E5 /* Login.storyboard */; };
+		BFA7AF971D1FB22100DE9A12 /* PostalCodeSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA7AF961D1FB22100DE9A12 /* PostalCodeSearchViewController.swift */; };
+		BFDA45501D1E830500A141BF /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDA454F1D1E830500A141BF /* CustomButton.swift */; };
+		BFE523701D1EA8E10098BC7A /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE5236F1D1EA8E10098BC7A /* CalculatorViewController.swift */; };
+		BFE523721D1EA8EB0098BC7A /* Calculator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE523711D1EA8EB0098BC7A /* Calculator.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +51,7 @@
 /* Begin PBXFileReference section */
 		BF208DB91D1C17AC00BD1FF0 /* UITestsSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITestsSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF208DBC1D1C17AC00BD1FF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BF208DBE1D1C17AC00BD1FF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BF208DBE1D1C17AC00BD1FF0 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		BF208DC11D1C17AC00BD1FF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF208DC31D1C17AC00BD1FF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF208DC61D1C17AC00BD1FF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -45,8 +60,23 @@
 		BF208DD11D1C17AD00BD1FF0 /* UITestsSampleAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestsSampleAppTests.swift; sourceTree = "<group>"; };
 		BF208DD31D1C17AD00BD1FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF208DD81D1C17AD00BD1FF0 /* UITestsSampleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITestsSampleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF208DDC1D1C17AD00BD1FF0 /* UITestsSampleAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestsSampleAppUITests.swift; sourceTree = "<group>"; };
+		BF208DDC1D1C17AD00BD1FF0 /* WelcomeViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewControllerUITests.swift; sourceTree = "<group>"; };
 		BF208DDE1D1C17AD00BD1FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF208DEA1D1C183E00BD1FF0 /* SelectFeatureTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectFeatureTableViewController.swift; sourceTree = "<group>"; };
+		BF208DEC1D1C1BC400BD1FF0 /* GradationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradationView.swift; sourceTree = "<group>"; };
+		BF3722F11D1FA243008E8EAD /* PostalCodeSearch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PostalCodeSearch.storyboard; sourceTree = "<group>"; };
+		BF3FB8B01D216290000CDCCC /* LoginViewControllerUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewControllerUITests.swift; sourceTree = "<group>"; };
+		BF3FB8B21D2180E9000CDCCC /* CalculatorViewControllerUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewControllerUITests.swift; sourceTree = "<group>"; };
+		BF3FB8B41D218115000CDCCC /* PostalCodeSearchViewControllerUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostalCodeSearchViewControllerUITests.swift; sourceTree = "<group>"; };
+		BF4417771D1F52DB006736B8 /* SelectFeatureTableViewControllerUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectFeatureTableViewControllerUITests.swift; sourceTree = "<group>"; };
+		BF85373D1D1C31180081B3E5 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BF85373F1D1C357B0081B3E5 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		BF8537421D1E77A00081B3E5 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		BF8537441D1E7CC80081B3E5 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		BFA7AF961D1FB22100DE9A12 /* PostalCodeSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostalCodeSearchViewController.swift; sourceTree = "<group>"; };
+		BFDA454F1D1E830500A141BF /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		BFE5236F1D1EA8E10098BC7A /* CalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		BFE523711D1EA8EB0098BC7A /* Calculator.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Calculator.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +128,18 @@
 			isa = PBXGroup;
 			children = (
 				BF208DBC1D1C17AC00BD1FF0 /* AppDelegate.swift */,
-				BF208DBE1D1C17AC00BD1FF0 /* ViewController.swift */,
-				BF208DC01D1C17AC00BD1FF0 /* Main.storyboard */,
+				BFE523741D1EB1790098BC7A /* Main */,
+				BF8537481D1E7F250081B3E5 /* Login */,
+				BF8537491D1E7F350081B3E5 /* Calculator */,
+				BFA7AF951D1FB20700DE9A12 /* PostalCodeSearch */,
+				BFE523731D1EAFEF0098BC7A /* Storyboard */,
+				BFDA454F1D1E830500A141BF /* CustomButton.swift */,
+				BF208DEC1D1C1BC400BD1FF0 /* GradationView.swift */,
 				BF208DC31D1C17AC00BD1FF0 /* Assets.xcassets */,
 				BF208DC51D1C17AC00BD1FF0 /* LaunchScreen.storyboard */,
 				BF208DC81D1C17AC00BD1FF0 /* Info.plist */,
+				BF85373F1D1C357B0081B3E5 /* index.html */,
+				BF8537411D1E778C0081B3E5 /* Utility */,
 			);
 			path = UITestsSampleApp;
 			sourceTree = "<group>";
@@ -119,10 +156,66 @@
 		BF208DDB1D1C17AD00BD1FF0 /* UITestsSampleAppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				BF208DDC1D1C17AD00BD1FF0 /* UITestsSampleAppUITests.swift */,
+				BF208DDC1D1C17AD00BD1FF0 /* WelcomeViewControllerUITests.swift */,
+				BF3FB8B01D216290000CDCCC /* LoginViewControllerUITests.swift */,
+				BF4417771D1F52DB006736B8 /* SelectFeatureTableViewControllerUITests.swift */,
+				BF3FB8B21D2180E9000CDCCC /* CalculatorViewControllerUITests.swift */,
+				BF3FB8B41D218115000CDCCC /* PostalCodeSearchViewControllerUITests.swift */,
 				BF208DDE1D1C17AD00BD1FF0 /* Info.plist */,
 			);
 			path = UITestsSampleAppUITests;
+			sourceTree = "<group>";
+		};
+		BF8537411D1E778C0081B3E5 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				BF8537421D1E77A00081B3E5 /* ViewControllerFactory.swift */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		BF8537481D1E7F250081B3E5 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				BF85373D1D1C31180081B3E5 /* LoginViewController.swift */,
+				BF208DEA1D1C183E00BD1FF0 /* SelectFeatureTableViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		BF8537491D1E7F350081B3E5 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				BFE5236F1D1EA8E10098BC7A /* CalculatorViewController.swift */,
+			);
+			name = Calculator;
+			sourceTree = "<group>";
+		};
+		BFA7AF951D1FB20700DE9A12 /* PostalCodeSearch */ = {
+			isa = PBXGroup;
+			children = (
+				BFA7AF961D1FB22100DE9A12 /* PostalCodeSearchViewController.swift */,
+			);
+			name = PostalCodeSearch;
+			sourceTree = "<group>";
+		};
+		BFE523731D1EAFEF0098BC7A /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				BF208DC01D1C17AC00BD1FF0 /* Main.storyboard */,
+				BF8537441D1E7CC80081B3E5 /* Login.storyboard */,
+				BFE523711D1EA8EB0098BC7A /* Calculator.storyboard */,
+				BF3722F11D1FA243008E8EAD /* PostalCodeSearch.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		BFE523741D1EB1790098BC7A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BF208DBE1D1C17AC00BD1FF0 /* WelcomeViewController.swift */,
+			);
+			name = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,7 +332,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF208DC71D1C17AC00BD1FF0 /* LaunchScreen.storyboard in Resources */,
+				BF8537401D1C357B0081B3E5 /* index.html in Resources */,
+				BF3722F21D1FA243008E8EAD /* PostalCodeSearch.storyboard in Resources */,
+				BFE523721D1EA8EB0098BC7A /* Calculator.storyboard in Resources */,
 				BF208DC41D1C17AC00BD1FF0 /* Assets.xcassets in Resources */,
+				BF8537451D1E7CC80081B3E5 /* Login.storyboard in Resources */,
 				BF208DC21D1C17AC00BD1FF0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,8 +362,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF208DBF1D1C17AC00BD1FF0 /* ViewController.swift in Sources */,
+				BF208DBF1D1C17AC00BD1FF0 /* WelcomeViewController.swift in Sources */,
+				BFA7AF971D1FB22100DE9A12 /* PostalCodeSearchViewController.swift in Sources */,
+				BFDA45501D1E830500A141BF /* CustomButton.swift in Sources */,
 				BF208DBD1D1C17AC00BD1FF0 /* AppDelegate.swift in Sources */,
+				BF208DED1D1C1BC400BD1FF0 /* GradationView.swift in Sources */,
+				BFE523701D1EA8E10098BC7A /* CalculatorViewController.swift in Sources */,
+				BF8537431D1E77A00081B3E5 /* ViewControllerFactory.swift in Sources */,
+				BF85373E1D1C31180081B3E5 /* LoginViewController.swift in Sources */,
+				BF208DEB1D1C183E00BD1FF0 /* SelectFeatureTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +386,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF208DDD1D1C17AD00BD1FF0 /* UITestsSampleAppUITests.swift in Sources */,
+				BF208DDD1D1C17AD00BD1FF0 /* WelcomeViewControllerUITests.swift in Sources */,
+				BF4417781D1F52DB006736B8 /* SelectFeatureTableViewControllerUITests.swift in Sources */,
+				BF3FB8B31D2180E9000CDCCC /* CalculatorViewControllerUITests.swift in Sources */,
+				BF3FB8B51D218115000CDCCC /* PostalCodeSearchViewControllerUITests.swift in Sources */,
+				BF3FB8B11D216290000CDCCC /* LoginViewControllerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +520,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = UITestsSampleApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gates1de.UITestsSampleApp;
@@ -424,6 +534,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = UITestsSampleApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gates1de.UITestsSampleApp;
@@ -461,6 +572,7 @@
 		BF208DE81D1C17AD00BD1FF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = UITestsSampleAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gates1de.UITestsSampleAppUITests;
@@ -501,6 +613,7 @@
 				BF208DE31D1C17AD00BD1FF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF208DE41D1C17AD00BD1FF0 /* Build configuration list for PBXNativeTarget "UITestsSampleAppTests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +622,7 @@
 				BF208DE61D1C17AD00BD1FF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF208DE71D1C17AD00BD1FF0 /* Build configuration list for PBXNativeTarget "UITestsSampleAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +631,7 @@
 				BF208DE91D1C17AD00BD1FF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11129.15" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="T1W-35-PhA">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="Qfq-ZD-vGL">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uBU-m2-S2K" customClass="LoginViewController" customModule="UITestsSampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="751-Gy-PTF"/>
+                        <viewControllerLayoutGuide type="bottom" id="cZW-na-jYA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MEl-AD-gNd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z3t-Wb-9lC">
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="LoginView"/>
+                                </userDefinedRuntimeAttributes>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="z3t-Wb-9lC" secondAttribute="trailing" id="J7I-Ug-4fV"/>
+                            <constraint firstItem="z3t-Wb-9lC" firstAttribute="leading" secondItem="MEl-AD-gNd" secondAttribute="leading" id="YYD-fa-hpd"/>
+                            <constraint firstItem="cZW-na-jYA" firstAttribute="top" secondItem="z3t-Wb-9lC" secondAttribute="bottom" id="ogA-cU-ZS2"/>
+                            <constraint firstItem="z3t-Wb-9lC" firstAttribute="top" secondItem="751-Gy-PTF" secondAttribute="bottom" id="xXh-l8-eeu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="rhV-Oc-zv0"/>
+                    <connections>
+                        <outlet property="webView" destination="z3t-Wb-9lC" id="AUN-4j-h6k"/>
+                        <segue destination="Wta-4e-GPO" kind="showDetail" id="nno-1M-C3i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D2a-8E-9Pp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2408.8000000000002" y="115.59220389805098"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Uga-SI-BnG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="T1W-35-PhA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8o0-He-TZA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uBU-m2-S2K" kind="relationship" relationship="rootViewController" id="SfN-a6-ID1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ItS-7P-KtH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1469.5999999999999" y="115.59220389805098"/>
+        </scene>
+        <!--Select Feature Table View Controller-->
+        <scene sceneID="wkw-NR-ubO">
+            <objects>
+                <tableViewController storyboardIdentifier="SelectFeatureTableViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Wta-4e-GPO" customClass="SelectFeatureTableViewController" customModule="UITestsSampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="6Qb-Z3-doD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="UyG-oh-YGc">
+                                <frame key="frameInset" minY="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UyG-oh-YGc" id="wNb-Xw-ufZ">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <accessibility key="accessibilityConfiguration" identifier="ReuseIdentifier">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <connections>
+                                    <segue destination="3Ep-Uc-IjR" kind="unwind" unwindAction="selectedFeatureWithSegue:" id="3AB-2p-DtN"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="SelectFeatureTableView"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outlet property="dataSource" destination="Wta-4e-GPO" id="088-Il-5nP"/>
+                            <outlet property="delegate" destination="Wta-4e-GPO" id="UF2-H2-yjO"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xtr-vg-Qg8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="3Ep-Uc-IjR" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2409" y="844"/>
+        </scene>
+    </scenes>
+</document>

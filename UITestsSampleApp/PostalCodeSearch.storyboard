@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11129.15" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Mvi-Ww-rvn">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Postal Code Search View Controller-->
+        <scene sceneID="uO8-Xs-jDg">
+            <objects>
+                <viewController storyboardIdentifier="PostalCodeSearchViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Mvi-Ww-rvn" customClass="PostalCodeSearchViewController" customModule="UITestsSampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uFR-ZM-Ly0"/>
+                        <viewControllerLayoutGuide type="bottom" id="g2r-S3-IE6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="J5v-g2-RHH" customClass="GradationView" customModule="UITestsSampleApp" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Postal Code Search" textAlignment="natural" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="REU-8K-tba">
+                                <accessibility key="accessibilityConfiguration" identifier="PostalCodeSearchTitle"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Eq0-4P-5cA">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter a postal code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjN-dH-EFy">
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0000000" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="4Jd-Qo-5VZ">
+                                        <accessibility key="accessibilityConfiguration" identifier="PostalCodeTextField"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search Result" textAlignment="natural" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIg-IP-SVS">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hoge" textAlignment="natural" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xYm-1b-mOX">
+                                <accessibility key="accessibilityConfiguration" identifier="SearchResult"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W1a-xi-nYy" customClass="CustomButton" customModule="UITestsSampleApp" customModuleProvider="target">
+                                <accessibility key="accessibilityConfiguration" identifier="Search"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Search"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="search:" destination="Mvi-Ww-rvn" eventType="touchUpInside" id="7wj-lA-2AA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="REU-8K-tba" firstAttribute="centerX" secondItem="J5v-g2-RHH" secondAttribute="centerX" id="06L-oH-FM6"/>
+                            <constraint firstItem="Eq0-4P-5cA" firstAttribute="centerX" secondItem="J5v-g2-RHH" secondAttribute="centerX" id="90T-DR-okn"/>
+                            <constraint firstItem="W1a-xi-nYy" firstAttribute="top" secondItem="xYm-1b-mOX" secondAttribute="bottom" constant="30" id="CWh-1O-C7O"/>
+                            <constraint firstItem="gIg-IP-SVS" firstAttribute="centerX" secondItem="J5v-g2-RHH" secondAttribute="centerX" id="GgH-PQ-Omk"/>
+                            <constraint firstItem="Eq0-4P-5cA" firstAttribute="top" secondItem="REU-8K-tba" secondAttribute="bottom" constant="50" id="GpH-XF-AcW"/>
+                            <constraint firstItem="gIg-IP-SVS" firstAttribute="top" secondItem="Eq0-4P-5cA" secondAttribute="bottom" constant="30" id="Muz-K3-woD"/>
+                            <constraint firstItem="4Jd-Qo-5VZ" firstAttribute="width" secondItem="J5v-g2-RHH" secondAttribute="width" multiplier="0.75" id="OYE-87-dpf"/>
+                            <constraint firstItem="W1a-xi-nYy" firstAttribute="width" secondItem="Eq0-4P-5cA" secondAttribute="width" id="TuF-8o-4xZ"/>
+                            <constraint firstItem="REU-8K-tba" firstAttribute="top" secondItem="uFR-ZM-Ly0" secondAttribute="bottom" constant="8" id="cJw-C7-vAw"/>
+                            <constraint firstItem="W1a-xi-nYy" firstAttribute="centerX" secondItem="J5v-g2-RHH" secondAttribute="centerX" id="lem-pY-ZhU"/>
+                            <constraint firstItem="xYm-1b-mOX" firstAttribute="top" secondItem="gIg-IP-SVS" secondAttribute="bottom" constant="10" id="mXd-yq-9Ya"/>
+                            <constraint firstItem="xYm-1b-mOX" firstAttribute="centerX" secondItem="J5v-g2-RHH" secondAttribute="centerX" id="waD-WB-Rpr"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                                <color key="value" red="0.38348067434210525" green="0.83619449013157898" blue="0.67537006578947367" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                                <color key="value" red="0.17441920230263158" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="xYm-1b-mOX" id="2Vd-RN-rla"/>
+                        <outlet property="textField" destination="4Jd-Qo-5VZ" id="P1s-70-8hR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fII-Kt-lfK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="39" y="93"/>
+        </scene>
+    </scenes>
+</document>

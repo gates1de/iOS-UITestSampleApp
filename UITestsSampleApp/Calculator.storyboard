@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11129.15" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="v4f-bm-5Pt">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Calculator View Controller-->
+        <scene sceneID="Kaq-jf-YhZ">
+            <objects>
+                <viewController storyboardIdentifier="CalculatorViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="v4f-bm-5Pt" customClass="CalculatorViewController" customModule="UITestsSampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GVh-V3-FcU"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ya9-i2-WpY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hJS-RL-mOb" customClass="GradationView" customModule="UITestsSampleApp" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Square Root Calculator" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8sP-Vy-7Ux">
+                                <accessibility key="accessibilityConfiguration" identifier="CalculatorTitle"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xMN-kN-Xz4">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter a number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9A1-kU-cF6">
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="DDk-z0-eAL">
+                                        <accessibility key="accessibilityConfiguration" identifier="NumberTextField"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c8m-tC-Dfb">
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Yuo-YG-rOL">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Root" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JQJ-Xr-bhg">
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEX-5o-7Oq">
+                                                <accessibility key="accessibilityConfiguration" identifier="RootResult"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rhx-B0-rNs">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Square" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MH3-z8-fSD">
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txg-Pd-x64">
+                                                <accessibility key="accessibilityConfiguration" identifier="SquareResult"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="txg-Pd-x64" firstAttribute="width" secondItem="SEX-5o-7Oq" secondAttribute="width" id="gLV-a1-uBD"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egZ-ZP-XP2" customClass="CustomButton" customModule="UITestsSampleApp" customModuleProvider="target">
+                                <accessibility key="accessibilityConfiguration" identifier="Calculate"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="calculate:" destination="v4f-bm-5Pt" eventType="touchUpInside" id="3YF-i3-r31"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8sP-Vy-7Ux" firstAttribute="top" secondItem="GVh-V3-FcU" secondAttribute="bottom" constant="8" id="2Qx-Pe-mKO"/>
+                            <constraint firstItem="DDk-z0-eAL" firstAttribute="width" secondItem="hJS-RL-mOb" secondAttribute="width" multiplier="0.75" id="Eaa-TX-YQs"/>
+                            <constraint firstItem="8sP-Vy-7Ux" firstAttribute="centerX" secondItem="hJS-RL-mOb" secondAttribute="centerX" id="GJ9-gm-8OC"/>
+                            <constraint firstItem="c8m-tC-Dfb" firstAttribute="top" secondItem="xMN-kN-Xz4" secondAttribute="bottom" constant="30" id="GUO-da-ahC"/>
+                            <constraint firstItem="egZ-ZP-XP2" firstAttribute="top" secondItem="c8m-tC-Dfb" secondAttribute="bottom" constant="30" id="H84-eA-849"/>
+                            <constraint firstItem="c8m-tC-Dfb" firstAttribute="centerX" secondItem="hJS-RL-mOb" secondAttribute="centerX" id="Hyc-Dy-VVB"/>
+                            <constraint firstItem="xMN-kN-Xz4" firstAttribute="centerX" secondItem="hJS-RL-mOb" secondAttribute="centerX" id="Vdx-9p-0OR"/>
+                            <constraint firstItem="SEX-5o-7Oq" firstAttribute="width" secondItem="xMN-kN-Xz4" secondAttribute="width" multiplier="0.5" id="efg-wp-hG4"/>
+                            <constraint firstItem="egZ-ZP-XP2" firstAttribute="centerX" secondItem="hJS-RL-mOb" secondAttribute="centerX" id="fGp-zb-bQa"/>
+                            <constraint firstItem="egZ-ZP-XP2" firstAttribute="width" secondItem="xMN-kN-Xz4" secondAttribute="width" id="qED-Y2-ob4"/>
+                            <constraint firstItem="xMN-kN-Xz4" firstAttribute="top" secondItem="8sP-Vy-7Ux" secondAttribute="bottom" constant="50" id="rDf-ZN-WJX"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                                <color key="value" red="0.0" green="4.9510788726836025e-05" blue="0.11061919565723025" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                                <color key="value" red="0.39215686274509803" green="0.39215686274509803" blue="0.47058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <navigationItem key="navigationItem" id="CEJ-Ic-8Ri"/>
+                    <connections>
+                        <outlet property="rootLabel" destination="SEX-5o-7Oq" id="ljn-QO-EFw"/>
+                        <outlet property="squareLabel" destination="txg-Pd-x64" id="zkv-2r-EBw"/>
+                        <outlet property="textField" destination="DDk-z0-eAL" id="IJL-YU-Zps"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7iz-Hd-v5d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1278" y="-679"/>
+        </scene>
+    </scenes>
+</document>
